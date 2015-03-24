@@ -9,7 +9,7 @@ MAINTAINER Jeremy Jongsma "jeremy@barchart.com"
 
 ENV HOME /etc/repo-deploy
 
-RUN pip install repodeploy docker-py
+RUN pip install repodeploy
 
 ADD etc/ /etc/
 
