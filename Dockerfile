@@ -9,7 +9,7 @@ MAINTAINER Jeremy Jongsma "jeremy@barchart.com"
 
 ENV HOME /etc/repo-deploy
 
-RUN pip install repodeploy
+RUN pip install repo-deploy
 
 ADD etc/ /etc/
 
