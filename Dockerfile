@@ -9,7 +9,11 @@ MAINTAINER Jeremy Jongsma "jeremy@barchart.com"
 
 ENV HOME /etc/repo-deploy
 
-RUN pip install repo-deploy
+RUN apt-get -y update && \
+	apt-get -y install git && \
+	pip install repo-deploy
+
+ADD ssh/config /root/.ssh/config
 
 VOLUME ["/var/deploy"]
 
