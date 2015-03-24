@@ -8,8 +8,8 @@ FROM barchart/base
 MAINTAINER Jeremy Jongsma "jeremy@barchart.com"
 
 RUN apt-get -y update && \
-	apt-get -y install git python-dev libffi-dev libssl-dev && \
-	pip install repo-deploy pyopenssl ndg-httpsclient pyasn1
+	apt-get -y install git && \
+	pip install repo-deploy
 
 ADD ssh/config /root/.ssh/config
 
